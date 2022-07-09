@@ -1,0 +1,57 @@
+/* Container */
+.container{
+  padding: 0 15%;
+}
+
+/* Colors */
+.light-grey{
+  color: #F0F0F0;
+}
+
+/* Navigation Bar */
+nav .container{
+  padding: 2rem 15% 10rem;
+}
+
+.navbar-brand{
+  position: fixed;
+  background-color: rgba(49, 48, 46, 0.7);
+  width: 2rem;
+  text-align: center;
+}
+
+.nav-item{
+  margin: 0 2rem;
+  font-size: 1.2rem;
+  font-family: 'Edu TAS Beginner', cursive;
+}
+
+/* Title Section */
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("../images/moon-background3.png");
+  background-color: #31302E;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-center{
+  width: 50%;
+  line-height: 3;
+  margin-top: 3rem;
+}
+
+.title{
+  font-family: 'Edu TAS Beginner', cursive;
+  font-size: 3rem;
+}
+
+.lead{
+  font-family: 'Edu SA Beginner', cursive;
+  font-size: 1.5rem;
+}
+
+
+
