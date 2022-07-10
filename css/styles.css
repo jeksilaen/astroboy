@@ -24,13 +24,13 @@ nav .container{
   margin: 0 2rem;
   font-size: 1.2rem;
   font-family: 'Edu TAS Beginner', cursive;
+  display: none;
 }
 
 /* Title Section */
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: url("../images/moon-background3.png");
   background-color: #31302E;
   background-size: cover;
   background-position: center;
@@ -38,7 +38,6 @@ nav .container{
 }
 
 .text-center{
-  width: 50%;
   line-height: 3;
   margin-top: 3rem;
 }
@@ -46,12 +45,26 @@ nav .container{
 .title{
   font-family: 'Edu TAS Beginner', cursive;
   font-size: 3rem;
+  display: none;
 }
 
 .lead{
   font-family: 'Edu SA Beginner', cursive;
   font-size: 1.5rem;
+  display: none;
 }
 
+.title-image{
+  position: absolute;
+  display: none;
+  z-index: 1;
+  width: 50%;
+  right: 5rem;
+  top: 7rem;
+}
 
-
+.main{
+  background-color: #F0F0F0;
+  position: relative;
+  z-index: 2;
+}
