@@ -39,7 +39,7 @@ nav .container{
 
 .text-center{
   line-height: 3;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .title{
@@ -60,11 +60,36 @@ nav .container{
   z-index: 1;
   width: 50%;
   right: 5rem;
-  top: 7rem;
+  top: 12rem;
 }
 
-.main{
+/* Main section */
+
+.about{
   background-color: #F0F0F0;
   position: relative;
   z-index: 2;
+}
+
+@media (max-width:800px) {
+  .title-image{
+    visibility: hidden;
+  }
+
+  .masthead{
+    background-image: url("../images/moon-background.png");
+  }
+
+  nav .container{
+    padding: 0 5% 1rem;
+  }
+
+  .title, .lead{
+    background-color: rgba(49, 48, 46, 0.7);
+  }
+
+  .nav-item{
+    visibility: hidden;
+  }
+
 }
