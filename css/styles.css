@@ -1,6 +1,31 @@
+body{
+  font-family: 'Albert Sans', sans-serif;
+}
+
+img{
+  border-radius: 50%;
+}
+
+hr{
+  border-style: dotted none none none;
+  border-top-width: 10px;
+  width: 10%;
+  border-color: #31302E ;
+  margin: 100px auto;
+  background-color: #F0F0F0;
+}
+
+video{
+  width: 90%;
+}
+
 /* Container */
 .container{
-  padding: 0 15%;
+  padding: 5rem 15%;
+}
+
+nav .container{
+  padding: 5rem 10%;
 }
 
 /* Colors */
@@ -8,22 +33,19 @@
   color: #F0F0F0;
 }
 
-/* Navigation Bar */
-nav .container{
-  padding: 2rem 15% 10rem;
-}
-
+/* Navigation bar */
 .navbar-brand{
   position: fixed;
-  background-color: rgba(49, 48, 46, 0.7);
+  background-color: rgba(49, 48, 46, 0.3);
   width: 2rem;
   text-align: center;
+  z-index: 3;
 }
 
 .nav-item{
   margin: 0 2rem;
   font-size: 1.2rem;
-  font-family: 'Edu TAS Beginner', cursive;
+  font-family: 'Albert Sans', sans-serif;
   display: none;
 }
 
@@ -37,11 +59,6 @@ nav .container{
   background-repeat: no-repeat;
 }
 
-.text-center{
-  line-height: 3;
-  margin-top: 5rem;
-}
-
 .title{
   font-family: 'Edu TAS Beginner', cursive;
   font-size: 3rem;
@@ -49,7 +66,7 @@ nav .container{
 }
 
 .lead{
-  font-family: 'Edu SA Beginner', cursive;
+  font-family: 'Albert Sans', sans-serif;
   font-size: 1.5rem;
   display: none;
 }
@@ -63,12 +80,66 @@ nav .container{
   top: 12rem;
 }
 
-/* Main section */
+.landing-row{
+  height: 50vh;
+  margin: 0;
+}
 
-.about{
+.landing-col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title{
+  font-family: 'Edu TAS Beginner', cursive;
+}
+
+
+/* About */
+#about-section{
   background-color: #F0F0F0;
   position: relative;
   z-index: 2;
+  text-align: center;
+}
+
+.about-img{
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+/* Project */
+#project-section{
+  background-color: #94908D;
+}
+
+.project-display{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-row{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.project-desc{
+  color: #F0F0F0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.project-button{
+  background-color: #31302E;
+  width: 60%;
+  height: 2rem;
+  border-radius: 1rem;
+  color: #F0F0F0;
 }
 
 @media (max-width:800px) {
@@ -85,11 +156,15 @@ nav .container{
   }
 
   .title, .lead{
-    background-color: rgba(49, 48, 46, 0.7);
+    background-color: rgba(49, 48, 46, 0.5);
+    margin-bottom: 0;
   }
 
-  .nav-item{
-    visibility: hidden;
+  .about-col{
+    margin: 1.5rem 0;
   }
 
+  .project-display{
+    margin-bottom: 15px;
+  }
 }

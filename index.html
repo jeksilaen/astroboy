@@ -19,8 +19,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Edu+TAS+Beginner:wght@600&display=swap" rel="stylesheet">
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;400&family=Edu+SA+Beginner&family=Edu+TAS+Beginner:wght@600&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
 <body>
 
@@ -32,21 +31,21 @@
               <a class="navbar-brand rounded-circle" href="#landing-page"><i class="fa-solid fa-moon light-grey"></i></a>
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about-section">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#project-section">Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact-section">Contact</a>
                   </li>
                 </ul>
             </div>
           </nav>
 
           <!-- Landing Title -->
-          <div class="row">
-            <div class="col-lg-6">
+          <div class="row landing-row">
+            <div class="col-lg-6 landing-col">
               <div class="text-center">
                 <h1 class="title light-grey">Welcome, stranger!</h1>
                 <p class="lead light-grey">I'm Zach, a web developer.</p>
@@ -58,42 +57,87 @@
             </div>
           </div>
           
-          
-
     </header>
 
-    
-    <main class="main">
-
-      <section class="py-5 about">
+    <main>
+      <!-- About page -->
+      <section id="about-section">
         <div class="container ">
-          <h2 class="fw-light">Page Content</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis
-            blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat
-            reprehenderit expedita.</p>
+          <div class="row">
+            <div class="col-lg-4">
+              <a href="https://drive.google.com/file/d/1vm2PsNNDvKnGCmyQF2HQZKuE-Oft5krq/view?usp=sharing"><img class="about-img me" src="images/me.png" alt=""></a>
+              <h3 class="section-title">Who am i.</h3>
+              <p>A passionate learner with interest in all-things technology.</p>
+            </div>
+
+            <div class="col-lg-4 about-col">
+              <a href="https://drive.google.com/file/d/1vm2PsNNDvKnGCmyQF2HQZKuE-Oft5krq/view?usp=sharing"><img class="about-img school" src="images/school.png" alt=""></a>
+              <h3 class="section-title">What i do.</h3>
+              <p>Currently a Software Engineering student at Telkom University.</p>
+            </div>
+            
+            <div class="col-lg-4">
+              <a href="https://drive.google.com/file/d/1vm2PsNNDvKnGCmyQF2HQZKuE-Oft5krq/view?usp=sharing"><img class="about-img goals" src="images/goals.png" alt=""></a>
+              <h2 class="section-title">Where i'm heading.</h3>
+              <p>Aspire to be a Full-Stack Developer in a big company.</p>
+            </div>
+          </div>
         </div>
       </section>
-  
-      <section class="py-5">
+
+      <!-- Project page -->
+      <section id="project-section">
         <div class="container">
-          <h2 class="fw-light">Page Content</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis
-            blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat
-            reprehenderit expedita.</p>
-        </div>
-      </section>
-  
-      <section class="py-5">
-        <div class="container">
-          <h2 class="fw-light">Page Content</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis
-            blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat
-            reprehenderit expedita.</p>
+      
+          <div class="row">
+            <div class="col-lg-6 project-display">
+              <video autoplay loop>
+                <source src="videos/static-websites.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-lg-6 project-desc">
+              <div>
+                <h2 class="section-title">Static Websites</h2>
+                <p>I've created in total about 7 web projects which includes this website, a Tinder clone, a fully-working drum kit, a recreation of the Simon Game, and many more.</p>
+                <button class="project-button">Check it out!</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row project-row">
+            <div class="col-lg-6 project-display">
+              <video autoplay loop>
+                <source src="videos/mini-programs.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-lg-6 project-desc">
+              <div>
+                <h2 class="section-title">Mini Programs</h2>
+                <p>Simple programs from various programming languages that i've learnt. Contains programs written in Python, Java, C++, C#, Golang, and JavaScript.</p>
+                <button class="project-button">Check it out!</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 project-display">
+              <video autoplay loop>
+                <source src="videos/uiux-design.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-lg-6 project-desc">
+              <div>
+                <h2 class="section-title">UI/UX Designs</h2>
+                <p>I've created in total about 7 web projects which includes this website, a Tinder clone, a fully-working drum kit, a recreation of the Simon Game, and many more.</p>
+                <button class="project-button">Check it out!</button>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
     </main>
-      
 
 
   <!-- Bootstrap Scripts & Font Awesome -->
