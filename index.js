@@ -37,6 +37,51 @@ $(".project-button").hover(function () {
     }
 );
 
+$(".contact-icon").hover(function () {
+        // over
+        $(this).css("color", "#4e4c48");
+    }, function () {
+        // out
+        $(this).css("color", "#31302E");
+    }
+);
+
+$(".fa-github").hover(function () {
+        // over
+        $(".git").css("visibility", "visible");
+    }, function () {
+        // out
+        $(".git").css("visibility", "hidden");
+    }
+);
+
+$(".fa-linkedin").hover(function () {
+    // over
+    $(".linked").css("visibility", "visible");
+}, function () {
+    // out
+    $(".linked").css("visibility", "hidden");
+}
+);
+
+$(".fa-instagram").hover(function () {
+    // over
+    $(".ig").css("visibility", "visible");
+}, function () {
+    // out
+    $(".ig").css("visibility", "hidden");
+}
+);
+
+$(".fa-envelope").hover(function () {
+    // over
+    $(".mail").css("visibility", "visible");
+}, function () {
+    // out
+    $(".mail").css("visibility", "hidden");
+}
+);
+
 function changeAbout(attr){
     switch (attr) {
         case "me":
