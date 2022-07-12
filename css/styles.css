@@ -19,6 +19,10 @@ nav .container{
   padding: 5rem 10%;
 }
 
+.container-project{
+  padding: 3rem 10% 0;
+}
+
 /* Colors */
 .light-grey{
   color: #F0F0F0;
@@ -115,6 +119,11 @@ nav .container{
   
 }
 
+.project-img{
+  width: 90%;
+  border-radius: 0;
+}
+
 .project-display{
   display: flex;
   align-items: center;
@@ -142,6 +151,10 @@ nav .container{
   height: 2rem;
   border-radius: 1rem;
   color: #F0F0F0;
+}
+
+.underline{
+  text-decoration: underline;
 }
 
 /* Contact section */
@@ -177,6 +190,7 @@ nav .container{
   padding-bottom: 1rem;
 }
 
+/* Responsive media */
 @media (max-width:800px) {
   .title-image{
     visibility: hidden;

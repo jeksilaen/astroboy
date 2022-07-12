@@ -37,6 +37,7 @@ $(".project-button").hover(function () {
     }
 );
 
+// Contact icon hover change
 $(".contact-icon").hover(function () {
         // over
         $(this).css("color", "#4e4c48");
@@ -46,6 +47,7 @@ $(".contact-icon").hover(function () {
     }
 );
 
+// Contact icon change visibility of link
 $(".fa-github").hover(function () {
         // over
         $(".git").css("visibility", "visible");
@@ -82,6 +84,7 @@ $(".fa-envelope").hover(function () {
 }
 );
 
+// Change about pictures
 function changeAbout(attr){
     switch (attr) {
         case "me":
