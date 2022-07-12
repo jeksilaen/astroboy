@@ -307,4 +307,24 @@ nav .container{
   .contact-icon{
     margin: 1rem 0 2rem;
   }
+
+  .underline-right{
+    width: 80%;
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  .underline-center{
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  .underline-left{
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  .project-arrow-left{
+    width: 10%;
+  }
 }
