@@ -53,6 +53,7 @@ nav .container{
 .masthead {
   height: 100vh;
   min-height: 500px;
+  background-image: url("../images/title-bg.png");
   background-color: #31302E;
   background-size: cover;
   background-position: center;
@@ -98,7 +99,11 @@ nav .container{
 
 /* About */
 #about-section{
+  background-image: url("../images/about-bg.png");
   background-color: #F0F0F0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   z-index: 2;
   text-align: center;
@@ -111,7 +116,12 @@ nav .container{
 
 /* Project */
 #project-section{
+  background-image: url("../images/project-bg.png");
   background-color: #94908D;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
 
 .project-display{
@@ -127,6 +137,7 @@ nav .container{
 
 .project-desc{
   color: #F0F0F0;
+  text-shadow: 1px 1px #31302E;
   text-align: center;
   display: flex;
   align-items: center;
@@ -160,11 +171,24 @@ nav .container{
     margin-bottom: 0;
   }
 
+  .title{
+    font-size: 2.3rem;
+    padding-bottom: 1rem;
+  }
+
+  .lead{
+    font-size: 1.3rem;
+  }
+
   .about-col{
     margin: 1.5rem 0;
   }
 
   .project-display{
     margin-bottom: 15px;
+  }
+
+  .landing-img{
+    display: none;
   }
 }
