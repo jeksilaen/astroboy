@@ -309,6 +309,28 @@ nav .container{
   }
 
   .underline-right{
+    width: 75%;
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  .underline-center{
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  .underline-left{
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  .project-arrow-left{
+    width: 16%;
+  }
+}
+
+@media (max-width:321px) {
+  .underline-right{
     width: 80%;
     font-size: 2rem;
     margin-top: 4rem;
