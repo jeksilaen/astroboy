@@ -84,6 +84,52 @@ $(".fa-envelope").hover(function () {
 }
 );
 
+
+// Project arrow hover change
+$(".project-arrow-right").hover(function () {
+        // over
+        $(".project-arrow-right").css("color", "#31302E");
+    }, function () {
+        // out
+        $(".project-arrow-right").css("color", "#F0F0F0");
+    }
+);
+
+$(".project-arrow-left").hover(function () {
+    // over
+    $(".project-arrow-left").css("color", "#31302E");
+}, function () {
+    // out
+    $(".project-arrow-left").css("color", "#F0F0F0");
+}
+);
+
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 // Change about pictures
 function changeAbout(attr){
     switch (attr) {

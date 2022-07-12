@@ -25,12 +25,28 @@
 
 <body>
 
+  <!-- Back to top button -->
+  <button
+        type="button"
+        class="btn btn-back btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+  <i class="fa fa-arrow-up"></i>
+  </button>
+  
     <header class="masthead" id="landing-page">
-      
+
           <!-- Navigation Bar -->
           <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-              <a class="navbar-brand rounded-circle" href="#landing-page"><i class="fa-solid fa-moon light-grey"></i></a>
+
+              <a href="#landing-page"><i class="fa-solid fa-moon light-grey"></i></a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
                     <a class="nav-link" href="#about-section">About</a>
@@ -39,16 +55,18 @@
                     <a class="nav-link" href="#project-section">Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contact-section">Contact</a>
+                    <a class="nav-link last-link" href="#contact-section">Contact</a>
                   </li>
                 </ul>
+              </div>
+
             </div>
           </nav>
 
           <!-- Landing Title -->
           <div class="row landing-row">
             <div class="col-lg-6 landing-col">
-              <div class="text-center">
+              <div class="text-center title-text">
                 <h1 class="title light-grey">Welcome, stranger!</h1>
                 <p class="lead light-grey">I'm Zach, a web developer.</p>
               </div>
@@ -67,19 +85,19 @@
         <div class="container ">
           <div class="row">
             <div class="col-lg-4">
-              <a target="_blank" href="https://drive.google.com/file/d/1vm2PsNNDvKnGCmyQF2HQZKuE-Oft5krq/view?usp=sharing"><img class="about-img me" src="images/me.png" alt=""></a>
+              <img class="about-img me" src="images/me.png" alt="">
               <h3 class="section-title">Who am i.</h3>
               <p>A passionate learner with interest in all-things technology.</p>
             </div>
 
             <div class="col-lg-4 about-col">
-              <a target="_blank" href="https://drive.google.com/file/d/1vm2PsNNDvKnGCmyQF2HQZKuE-Oft5krq/view?usp=sharing"><img class="about-img school" src="images/school.png" alt=""></a>
+              <img class="about-img school" src="images/school.png" alt="">
               <h3 class="section-title">What i do.</h3>
               <p>Currently a Software Engineering student at Telkom University.</p>
             </div>
             
             <div class="col-lg-4">
-              <a target="_blank" href="https://drive.google.com/file/d/1vm2PsNNDvKnGCmyQF2HQZKuE-Oft5krq/view?usp=sharing"><img class="about-img goals" src="images/goals.png" alt=""></a>
+              <img class="about-img goals" src="images/goals.png" alt="">
               <h3 class="section-title">Where i'm heading.</h3>
               <p>Aspire to be a Full-Stack Developer in a big company.</p>
             </div>
